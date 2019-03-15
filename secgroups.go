@@ -358,6 +358,9 @@ func (c *Client) BindSecGroup(secGUID, spaceGUID string) error {
 BindSpaceStagingSecGroup contacts the CF endpoint to associate a space with a security group for staging functions only
 secGUID: identifies the security group to add a space to
 spaceGUID: identifies the space to associate
+*/BindStagingSecGroupToSpace contacts the CF endpoint to associate a space with a security group for staging functions only
+secGUID: identifies the security group to add a space to
+spaceGUID: identifies the space to associate
 */
 func (c *Client) BindStagingSecGroupToSpace(secGUID, spaceGUID string) error {
 	//Perform the PUT and check for errors
